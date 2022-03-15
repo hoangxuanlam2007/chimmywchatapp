@@ -1,0 +1,313 @@
+/* Global */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+  font-family: 'Inter', sans-serif !important;
+  transition: all .2s;
+  -webkit-font-smoothing: antialiased !important;
+  scroll-behavior: smooth !important;
+}
+
+body {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+img, .msg-textarea, .ce-message-input-form, #ce-add-username-input, .ce-chat-title-form {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.ce-chat-title-form {
+  pointer-events: none;
+}
+
+/* Chats Page */
+
+.chats-page {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.nav-bar {
+  width: 100%;
+  height: 65px;
+  background-color: rgb(24, 132, 255) !important;
+}
+
+.logo-tab {
+  position: absolute;
+  left: 22px;
+  top: 12px;
+  font-size: 32px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  color: white;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.logo-tab-png {
+  display: inline;
+  width: 48px;
+  margin-top: -4px;
+  margin-right: 20px;
+}
+
+.logout-tab {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  color: white;
+  cursor: pointer;
+}
+
+.ce-chat-title-container {
+  background-color: white !important;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.ce-section-title-container.ce-person-title-container,
+.ce-section-title-container.ce-photo-title-container,
+#ce-options-drop-down {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.ce-chat-list, .ce-settings {
+  border-color: #e5e5e5 !important;
+}
+
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+/* Login Page */
+
+#login-page {
+  background: linear-gradient(150deg, #d9dbe2, #808aac 100%, #282d39 0);
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+#login-card {
+  position: relative;
+  top: calc(50vh - 210px);
+  left: calc(50vw - 210px);
+  padding-top: 36px;
+  padding-bottom: 66px;
+  width: 420px;
+  text-align: center;
+  background-color: #4a5162;
+  border-radius: 22px;
+  box-shadow: 0 2px 12px rgb(0 0 0 / 60%);
+}
+
+#login-card .login-logo {
+  width: 110px;
+  margin-bottom: -10px;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+
+#login-card h2 {
+  font-size: 30px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: unset !important;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.login-button {
+  cursor: pointer;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.gg-or-fb {
+  color: rgba(255, 255, 255, 0.8);
+  margin: 10px 0 10px 0;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.facebook {
+  background-color: #3b5998;
+  color: white;
+  border-radius: 25px;
+  padding: 15px;
+  transition: all .3s;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  box-shadow: 3px 3px 7px 3px rgb(0 0 0 / 10%);
+}
+
+.facebook:hover {
+  background-color: #344b7c;
+  box-shadow: 3px 3px 7px 3px rgb(0 0 0 / 15%);
+}
+
+.facebook:active {
+  transform: scale(.96);
+  box-shadow: 1px 1px 5px 1px rgb(0 0 0 / 10%);
+}
+
+.google {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border-radius: 25px;
+  padding: 15px;
+  transition: all .3s;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  box-shadow: 2px 2px 8px 4px rgb(0 0 0 / 15%);
+}
+
+.google:hover {
+  color: white;
+  background-color: #4c92fc;
+  box-shadow: 2px 2px 8px 4px rgb(0 0 0 / 25%);
+}
+
+.google:active {
+  transform: scale(.96);
+  box-shadow: 1px 1px 7px 1px rgb(0 0 0 / 25%);
+}
+
+.gg-icon {
+  width: 16px;  
+  margin-bottom: -2px;
+  margin-right: 5px;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.fb-icon {
+  width: 16px;
+  margin-bottom: -1px;
+  margin-right: 5px;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.ce-my-message-attachments-container img, .ce-their-message-attachments-container img {
+  border: 0px !important;
+}
+
+.ce-my-message-attachments-container img:hover, .ce-their-message-attachments-container img:hover {
+  transition: all .3s;
+  filter: brightness(0.75);
+}
+
+.ce-message-bubble.ce-my-message-bubble {
+  cursor: text !important;
+}
+
+.ce-chats-container {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.antiicon {
+  transition: all .1s ease-in-out !important;
+}
+
+.anticon:hover {
+  color: #47d3fd !important;
+}
+
+.mobile {
+  background-color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 30px;
+  display: none;
+}
+
+.ce-chat-card.false:hover {
+  background-color: #e9e9e9;  
+}
+
+.ce-chat-card.ce-active-chat-card {
+  background-color: #f1f1f1 !important;
+}
+
+@media (max-width: 800px) {
+  .mobile {
+    display: block;
+  }
+  * {
+    overflow-y: hidden !important;
+    overflow-x: hidden !important;
+  }
+}
